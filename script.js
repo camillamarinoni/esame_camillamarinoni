@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initBookingConfetti();
 });
 
-/* =========================
-   CALENDAR (solo contatti.html)
-========================= */
+/* CALENDARIO */
 function initCalendar() {
   const calendarEl = document.getElementById("calendar");
   const timeSelection = document.getElementById("timeSelection");
@@ -82,9 +80,7 @@ function initCalendar() {
   generateCalendar();
 }
 
-/* =========================
-   ACCORDION (solo chisono.html)
-========================= */
+/* ACCORDION */
 function initAccordion() {
   const buttons = document.querySelectorAll(".accordion button");
   if (!buttons.length) return;
@@ -112,9 +108,7 @@ function initAccordion() {
   });
 }
 
-/* =========================
-   BOOKING + CONFETTI (solo contatti.html)
-========================= */
+/* CONFERMA CON CORIANDOLI */
 function initBookingConfetti() {
   const selectedInfo = document.getElementById("selectedInfo");
   const confirmBtn = document.getElementById("confirmBookingBtn");
