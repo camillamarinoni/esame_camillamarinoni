@@ -100,9 +100,8 @@ p{
 
   /* RESPONSIVE FIX */
   font-size: clamp(3rem, 14vw, 16rem);
-  white-space: nowrap;
   line-height: 0.9;
-  max-width: 90vw;      /* impedisce overflow */
+  max-width: 90vw; 
 }
 
 .home-section{
@@ -111,11 +110,6 @@ p{
   position: relative;
   overflow: hidden;
   padding-top: 80px;
-}
-
-@keyframes rotateFlower{
-  from{ transform: rotate(0deg); }
-  to{ transform: rotate(360deg); }
 }
 
 /* WORK SECTION */
@@ -460,6 +454,7 @@ footer p{
 
   .brand-title{font-size: 1.2rem;}
 
+  .footer{text-align: center;}
 }
 
 /* mobile */
@@ -483,6 +478,7 @@ footer p{
     font-size: 15vw;
     right: 15px;
     bottom: 20px;
+    white-space: nowrap;
   }
   
   .navbar-collapse{
@@ -503,4 +499,6 @@ footer p{
     padding: 0;
     line-height: 0.9;
   }
+
+  .footer{text-align: center;}
 }
