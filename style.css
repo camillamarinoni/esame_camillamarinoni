@@ -460,7 +460,7 @@ footer p{
 /* mobile */
 @media (max-width: 768px){ 
   .image-gallery{ grid-template-columns: 1fr; }
-  
+
   .image-gallery .empty-slot{
     display: none;
   }
@@ -501,6 +501,4 @@ footer p{
     padding: 0;
     line-height: 0.9;
   }
-
-  .footer{text-align: center;}
 }
