@@ -465,6 +465,8 @@ footer p{
     display: none;
   }
 
+  h2{ font-size: 20px;}
+
   .custom-section{
     margin: 1rem;
   }
