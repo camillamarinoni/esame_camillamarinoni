@@ -35,7 +35,7 @@ p{
   font-size: 20px;
 }
 
-/* Utility (evita inline) */
+/* Classi Utility (evita inline) */
 .page-offset{ padding-top: 120px; }
 .section-gap{ margin-top: 200px; }
 .text-xl{ font-size: 25px; }
@@ -80,28 +80,6 @@ p{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ff004f' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Menu mobile */
-@media (max-width: 991.98px){
-  .navbar-collapse{
-    align-items: flex-end !important;
-    text-align: right;
-    padding: 2rem 1.5rem 0 0;
-  }
-
-  .navbar-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.6rem;
-  }
-
-  .navbar-nav .nav-link{
-    font-size: 1.4rem;
-    padding: 0;
-    line-height: 0.9;
-  }
-}
-
 .home-section{
   height: 100vh;
   width: 100%;
@@ -135,16 +113,6 @@ p{
   padding-top: 80px;
 }
 
-@media (max-width: 576px){
-
-  .hero-title{
-    font-size: 20vw;
-    right: 15px;
-    bottom: 20px;
-  }
-
-}
-
 @keyframes rotateFlower{
   from{ transform: rotate(0deg); }
   to{ transform: rotate(360deg); }
@@ -157,14 +125,6 @@ p{
   max-width: 1600px;
 }
 
-@media (max-width: 768px){
-  .custom-section{
-    padding: 1.5rem;
-    margin: 1.5rem;
-    max-width: 500px;
-  }
-}
-
 .skill-list{
   list-style: none;
   padding-left: 0;
@@ -173,10 +133,9 @@ p{
 
 .skill-list li{ margin-bottom: 0.5rem; }
 
-.text-block-left,
-.text-block-right{
+.text-block-left,.text-block-right{
   line-height: 1.6;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .text-block-right{
@@ -184,7 +143,7 @@ p{
   text-align: left;
 }
 
-/* IMAGE GALLERY (grid) */
+/* IMAGE GALLERY */
 .image-gallery{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -201,14 +160,6 @@ p{
 
 .image-gallery img{ object-fit: cover; }
 .empty-slot{ display: block; }
-
-@media (max-width: 992px){
-  .image-gallery{ grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 576px){
-  .image-gallery{ grid-template-columns: repeat(2, 1fr); }
-}
 
 /* CTA BUTTON (NON sovrascrive Bootstrap) */
 .btn-milla{
@@ -483,4 +434,73 @@ footer p{
 .confirm-booking-btn[disabled]{
   opacity: .7;
   cursor: default;
+}
+
+/* ipad */
+@media (max-width: 992px){
+  .image-gallery{ grid-template-columns: repeat(3, 1fr); }
+  
+  .image-gallery .empty-slot{
+    display: none;
+  }
+
+  .skill-list{
+    font-size: 10px;
+    line-height: 1;
+  }
+  h2{ font-size: 24px;}
+
+  p{font-size: 16px;}
+
+  .text-xl{font-size: 20px;}
+
+  .text-xxl{font-size: 24px;}
+
+  .title-xxl{font-size: 2.2rem;}
+
+  .brand-title{font-size: 1.2rem;}
+
+}
+
+/* mobile */
+@media (max-width: 768px){ 
+  .image-gallery{ grid-template-columns: 1fr; }
+  
+  .image-gallery .empty-slot{
+    display: none;
+  }
+
+  .custom-section{
+    margin: 1rem;
+  }
+
+  .text-block-left,
+  .text-block-right{
+    max-width: 100%;
+  }
+
+  .hero-title{
+    font-size: 15vw;
+    right: 15px;
+    bottom: 20px;
+  }
+  
+  .navbar-collapse{
+    align-items: flex-end !important;
+    text-align: right;
+    padding: 2rem 1.5rem 0 0;
+  }
+
+  .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+  }
+
+  .navbar-nav .nav-link{
+    font-size: 1.4rem;
+    padding: 0;
+    line-height: 0.9;
+  }
 }
